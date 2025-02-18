@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Madera Premium</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        .hero-section {
+            background-image: url('assets/bosque.jpg'); /* Cambia por tu imagen */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mejorar la legibilidad */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: #895705;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: white;
+        }
+
+        .social-icon:hover {
+            color: #ffc107; /* Cambia el color al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-tree me-2"></i>MaderaPremium
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero (Portada) -->
+    <section class="hero-section">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Bienvenido a MaderaPremium</h1>
+            <p class="lead">Calidad y sostenibilidad en cada pieza de madera</p>
+            <a href="#productos" class="btn btn-primary btn-lg">Ver productos</a>
+        </div>
+    </section>
+
+    <!-- Sección de Productos Destacados -->
+    <section id="productos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Productos Destacados</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/roble.jpg" class="card-img-top" alt="Roble Americano"> <!-- Cambia por tu imagen -->
+                        <div class="card-body">
+                            <h5 class="card-title">Roble Americano</h5>
+                            <p class="card-text">Madera dura de alta calidad para muebles premium.</p>
+                            <p class="text-primary fw-bold">$580 / m²</p>
+                            <button class="btn btn-outline-success">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/caoba.jpg" class="card-img-top" alt="Caoba Africana"> <!-- Cambia por tu imagen -->
+                        <div class="card-body">
+                            <h5 class="card-title">Caoba Africana</h5>
+                            <p class="card-text">Fina madera de tonalidad rojiza, perfecta para ebanistería.</p>
+                            <p class="text-primary fw-bold">$720 / m²</p>
+                            <button class="btn btn-outline-success">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/pino.jpg" class="card-img-top" alt="Pino Tratado"> <!-- Cambia por tu imagen -->
+                        <div class="card-body">
+                            <h5 class="card-title">Pino Tratado</h5>
+                            <p class="card-text">Ideal para construcciones exteriores resistentes a la intemperie.</p>
+                            <p class="text-primary fw-bold">$320 / m²</p>
+                            <button class="btn btn-outline-success">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/nogal.jpg" class="card-img-top" alt="Nogal Europeo"> <!-- Cambia por tu imagen -->
+                        <div class="card-body">
+                            <h5 class="card-title">Nogal Europeo</h5>
+                            <p class="card-text">Madera exótica con vetas únicas para proyectos especiales.</p>
+                            <p class="text-primary fw-bold">$890 / m²</p>
+                            <button class="btn btn-outline-success">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="productos.html" class="btn btn-outline-dark">Ver todos los productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2023 MaderaPremium. Todos los derechos reservados.</p>
+            <div class="mt-3">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
